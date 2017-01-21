@@ -19,7 +19,7 @@ git clone https://github.com/fetchrobotics/fetch_ros.git
 
 git clone https://github.com/fetchrobotics/robot_controllers.git
 
-git clone https://github.com/fetchrobotics/fetch_gazebo.git -b gazebo7
+git clone https://github.com/HumanoidRobotics/fetch_gazebo.git
 ```
 
 - Build packages
@@ -29,6 +29,7 @@ catkin_make
 ```
 
 - Run set-up
+
 Start Gazebo simulator with the playground:
 ```
 roslaunch fetch_gazebo playground.launch
@@ -45,12 +46,10 @@ rosrun rviz rviz
 ```
 
 ### Demo to TAs
-Show the simulated robot in action
-List 5 properties of the robots you can access in rviz
+- Show the simulated robot in action
+
+- List 5 properties of the robots you can access in rviz
 
 
 ## References
 - http://docs.fetchrobotics.com/gazebo.html
-
-
-
