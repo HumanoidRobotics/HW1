@@ -1,6 +1,7 @@
 # HW1
 ## COMS 6731 Spring 2017
-This homework will help students get familiar with ROS and GraspIt! It consists of three parts. 
+
+This homework consists of three parts. 
 
 [Part 1](./part_1.md) shows how to run a simulated robot in the ROS framework. You are required to run the fetch_gazebo demo that shows the real robot in a simulated environment.
 
