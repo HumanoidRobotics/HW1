@@ -1,12 +1,56 @@
-# HW1
-## COMS 6731 Spring 2017
+# Part 1
+## Fetch in Gazebo
 
-This homework consists of three parts. 
+This part assumes that you have gone through the ROS tutorial and have a basic knowledge of ros concepts like ros workspace, nodes, launch files etc. 
 
-[Part 1](./part_1.md) shows how to run a simulated robot in the ROS framework. You are required to run the fetch_gazebo demo that shows the real robot in a simulated environment.
+We adapted a portion of the [fetch documentation](http://docs.fetchrobotics.com/gazebo.html) into the following steps. You are encouraged to go through the page for more details.
 
-[Part 2](./part_2.md) requires you to build a map of the simulated environment using ROS packages.
 
-[Part 3](./part_3.md) requires you to do grasp planning using GraspIt! interface exposed to the ROS framework.
+- Create a ROS workspace
+```
+mkdir -p ~/fetch_ws/src
+cd ~/fetch_ws/src 
+catkin_init_workspace 
+```
 
-Please find corresponding instructions in the repo.
+- Clone relevant ROS packages
+```
+git clone https://github.com/fetchrobotics/fetch_ros.git
+
+git clone https://github.com/fetchrobotics/robot_controllers.git
+
+git clone https://github.com/fetchrobotics/fetch_gazebo.git -b gazebo7
+```
+
+- Build packages
+```
+cd ..
+catkin_make
+```
+
+- Run set-up
+Start Gazebo simulator with the playground:
+```
+roslaunch fetch_gazebo playground.launch
+```
+Wait until the simulator is fully running and then run the demo launch file:
+```
+roslaunch fetch_gazebo_demo demo.launch
+```
+
+- RVIZ visualization
+You can visualize several details about the robot in rviz.
+```
+rosrun rviz rviz
+```
+
+### Demo to TAs
+Show the simulated robot in action
+List 5 properties of the robots you can access in rviz
+
+
+## References
+- http://docs.fetchrobotics.com/gazebo.html
+
+
+
