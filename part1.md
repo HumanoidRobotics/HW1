@@ -8,6 +8,7 @@ We adapted a portion of the [fetch documentation](http://docs.fetchrobotics.com/
 
 - Create a ROS workspace
 ```
+source /opt/ros/indigo/setup.bash 
 mkdir -p ~/fetch_ws/src
 cd ~/fetch_ws/src 
 catkin_init_workspace 
