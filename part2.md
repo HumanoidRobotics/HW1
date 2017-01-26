@@ -14,7 +14,7 @@ roslaunch fetch_gazebo playground.launch
 
 Wait until the simulator is fully running and then run the fetch navigation launch file:
 ```
-roslaunch fetch_navigation fetch_nav.launch map_file:=NONE
+roslaunch fetch_navigation fetch_nav.launch map_file:=EMPTY
 ```
 
 Run the build map launch file:
@@ -26,6 +26,7 @@ roslaunch fetch_navigation build_map.launch
 ```
 rosrun rviz rviz
 ```
+Remember to add the robot model to rviz. Also add Map to rviz so you can visualize the map of the world you will build.
 
 ### Demo to TAs
 - Show the simulated robot in action
