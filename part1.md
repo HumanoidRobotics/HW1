@@ -33,18 +33,22 @@ catkin_make
 
 Start Gazebo simulator with the playground:
 ```
+source devel/setup.bash
 roslaunch fetch_gazebo playground.launch
 ```
 Wait until the simulator is fully running and then run the demo launch file:
 ```
+source devel/setup.bash
 roslaunch fetch_gazebo_demo demo.launch
 ```
 
 - RVIZ visualization
 You can visualize several details about the robot in rviz.
 ```
+source devel/setup.bash
 rosrun rviz rviz
 ```
+Add the robot model to the scene in rviz. You can add other components to rviz (play around with this).
 
 ### Demo to TAs
 - Show the simulated robot in action
