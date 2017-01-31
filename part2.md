@@ -1,7 +1,7 @@
 # Part 2
 ## Building a map using slam
 
-This part assumes that you have done [Part 1](./part_1.md) and makes use of some of the packages downloaded and built for [Part 1](./part_1.md).
+This part assumes that you have done [Part 1](./part1.md) and makes use of some of the packages downloaded and built for [Part 1](./part1.md).
 
 You are encouraged to go through this [fetch documentation page](http://docs.fetchrobotics.com/navigation.html#building-a-map) for more details.
 
